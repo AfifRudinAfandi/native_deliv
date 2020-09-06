@@ -18,8 +18,6 @@ import com.bumptech.glide.Glide;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 public class DetailMenu extends AppCompatActivity {
-    int count = 0;
-    int count2 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
