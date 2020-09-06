@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailMenu">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:paddingBottom="180dp">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+                <LinearLayout
+                    android:layout_marginTop="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingEnd="40dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/image_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:text="Ayam Kriwul Original"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunitosans_regular"
+                            android:text="(Nasi + Ayam PAHA ATAS/DADA + Sambal + Timun)"
+                            android:textColor="@color/colorGray"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. 10.000,-"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. 10.000,-"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:textColor="@color/colorGray"
+                            android:layout_gravity="end"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="11dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGray_2"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+                <LinearLayout
+                    android:layout_marginTop="14dp"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:text="Catatan Tambahan"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginEnd="6dp"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitosans_regular"
+                        android:text="Optional"
+                        android:textColor="@color/colorGray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textCursorDrawable="@color/colorGray_2"
+                    android:hint="Contoh, Tidak pedas dll."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:gravity="start"
+                    android:fontFamily="@font/nunitosans_regular"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/colorGray"
+                    android:textColorHint="@color/colorGray"
+                    android:background="@drawable/outline_radius_6"
+                    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"/>
+
+                <LinearLayout
+                    android:layout_marginTop="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:text="Jumlah Pesanan"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16sp" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/minus"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/view_radius_4"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:textSize="18sp"
+                            android:backgroundTint="@color/colorGray_2"
+                            android:textColor="@color/colorBlack"
+                            android:text="-"
+                            style="@style/Widget.AppCompat.Button.Borderless"/>
+                        <TextView
+                            android:id="@+id/value_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/nunitosans_extrabold"
+                            android:textColor="@color/colorBlack" />
+
+                        <Button
+                            android:id="@+id/plus"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/view_radius_4"
+                            android:backgroundTint="@color/colorGray_2"
+                            android:fontFamily="@font/nunitosans_bold"
+                            android:text="+"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/appbar_gradient"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:id="@+id/back"
+                    android:layout_width="56dp"
+                    android:layout_gravity="bottom"
+                    android:layout_height="56dp"
+                    android:clickable="true">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow_left"
+                        app:tint="@color/colorWhite" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_height="56dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/nunitosans_semibold"
+                        android:text="Detail"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/button_tambah_pesanan"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
