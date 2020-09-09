@@ -16,6 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4251181b-cdaf-464c-9b50-a7e72e0060f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bag.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_place.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_tiket.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/view_radius_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/floating_bag_layout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -26,11 +31,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/activity/DetailMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/activity/DetailMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/activity/InfoPesanan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/activity/InfoPesanan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/ui/home/HomeFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_info_pesanan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_info_pesanan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/button_pesan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/button_pesan.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +102,7 @@
     <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="memory.settings.postsync.last.time.stamp" value="1597680680258" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
@@ -117,8 +132,8 @@
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/build/delivery" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     </key>
@@ -245,12 +260,12 @@
     <state x="496" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1597772585691" />
     <state x="496" y="120" key="#com.intellij.ide.util.MemberChooser/0.23.1366.695@0.23.1366.695" timestamp="1597921699080" />
     <state x="496" y="121" key="#com.intellij.ide.util.MemberChooser/0.23.1366.702@0.23.1366.702" timestamp="1599370780775" />
-    <state x="421" y="125" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599101230263">
+    <state x="421" y="125" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599452457079">
       <screen x="0" y="23" width="1366" height="702" />
     </state>
     <state x="421" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598011666530" />
     <state x="421" y="124" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.695@0.23.1366.695" timestamp="1597942871873" />
-    <state x="421" y="125" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.702@0.23.1366.702" timestamp="1599101230263" />
+    <state x="421" y="125" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1366.702@0.23.1366.702" timestamp="1599452457079" />
     <state x="421" y="124" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1597813749516">
       <screen x="0" y="23" width="1366" height="695" />
     </state>
@@ -259,11 +274,12 @@
       <screen x="0" y="23" width="1366" height="709" />
     </state>
     <state x="271" y="133" key="AndroidCreateResourceDirectoryDialog/0.23.1366.709@0.23.1366.709" timestamp="1599045309238" />
-    <state x="271" y="157" key="AndroidCreateResourceFileDialog" timestamp="1598781816464">
-      <screen x="0" y="23" width="1366" height="704" />
+    <state x="271" y="157" key="AndroidCreateResourceFileDialog" timestamp="1599451091579">
+      <screen x="0" y="23" width="1366" height="702" />
     </state>
     <state x="271" y="146" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597741825045" />
     <state x="271" y="155" key="AndroidCreateResourceFileDialog/0.23.1366.695@0.23.1366.695" timestamp="1597927618036" />
+    <state x="271" y="157" key="AndroidCreateResourceFileDialog/0.23.1366.702@0.23.1366.702" timestamp="1599451091579" />
     <state x="271" y="157" key="AndroidCreateResourceFileDialog/0.23.1366.704@0.23.1366.704" timestamp="1598781816464" />
     <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1599104262861">
       <screen x="0" y="23" width="1366" height="702" />
@@ -364,7 +380,7 @@
       <screen x="0" y="23" width="1366" height="698" />
     </state>
     <state x="348" y="166" key="run.anything.popup/0.23.1366.698@0.23.1366.698" timestamp="1598257513758" />
-    <state x="346" y="80" width="670" height="161" key="search.everywhere.popup" timestamp="1599104386341">
+    <state x="346" y="80" width="670" height="161" key="search.everywhere.popup" timestamp="1599451251910">
       <screen x="0" y="23" width="1366" height="702" />
     </state>
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1597641237869" />
@@ -373,7 +389,7 @@
     <state x="346" y="79" width="672" height="639" key="search.everywhere.popup/0.23.1366.695@0.23.1366.695" timestamp="1597943081693" />
     <state x="346" y="79" width="670" height="158" key="search.everywhere.popup/0.23.1366.697@0.23.1366.697" timestamp="1598429977648" />
     <state x="346" y="79" width="670" height="158" key="search.everywhere.popup/0.23.1366.698@0.23.1366.698" timestamp="1598257406785" />
-    <state x="346" y="80" width="670" height="161" key="search.everywhere.popup/0.23.1366.702@0.23.1366.702" timestamp="1599104386341" />
+    <state x="346" y="80" width="670" height="161" key="search.everywhere.popup/0.23.1366.702@0.23.1366.702" timestamp="1599451251910" />
     <state x="346" y="80" width="670" height="160" key="search.everywhere.popup/0.23.1366.704@0.23.1366.704" timestamp="1598801190205" />
   </component>
 </project>

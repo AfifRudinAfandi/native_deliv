@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.InfoPesanan"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".activity.DetailMerchants"
@@ -32,7 +32,7 @@
             android:name=".activity.DaftarMenu"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.InfoPesanan"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>

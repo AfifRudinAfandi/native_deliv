@@ -16,6 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
@@ -26,6 +27,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.build.delivery.R;
 import com.build.delivery.activity.DaftarMenu;
+import com.build.delivery.activity.InfoPesanan;
 import com.build.delivery.adapter.RecyclerViewAdapterMenuBeranda;
 import com.build.delivery.adapter.RecyclerViewAdapterMerchants;
 import com.build.delivery.model.Image;
@@ -68,6 +70,14 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), DaftarMenu.class);
+                startActivity(intent);
+            }
+        });
+        ConstraintLayout floatingbag= root.findViewById(R.id.floatingbag);
+        floatingbag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), InfoPesanan.class);
                 startActivity(intent);
             }
         });

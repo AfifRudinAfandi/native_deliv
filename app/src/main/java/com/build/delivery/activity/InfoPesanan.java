@@ -1,8 +1,11 @@
 package com.build.delivery.activity;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +20,13 @@ public class InfoPesanan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_pesanan);
 
+        FrameLayout back = findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         // get the bottom sheet view
         final LinearLayout llBottomSheet =  findViewById(R.id.pesan);
@@ -41,5 +51,10 @@ public class InfoPesanan extends AppCompatActivity {
 
             }
         });
+
+        TextView tvPriceFee = findViewById(R.id.priceFee);
+        TextView tvPriceFeeBtm = findViewById(R.id.priceFeeBtm);
+        tvPriceFee.setPaintFlags(tvPriceFee.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
+        tvPriceFeeBtm.setPaintFlags(tvPriceFeeBtm.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
     }
 }
