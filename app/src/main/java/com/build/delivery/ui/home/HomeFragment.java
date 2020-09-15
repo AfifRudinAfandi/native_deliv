@@ -27,11 +27,11 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.build.delivery.R;
 import com.build.delivery.activity.DaftarMenu;
-import com.build.delivery.activity.InfoPesanan;
 import com.build.delivery.adapter.RecyclerViewAdapterMenuBeranda;
 import com.build.delivery.adapter.RecyclerViewAdapterMerchants;
 import com.build.delivery.model.Image;
 import com.build.delivery.utils.Tools;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,6 +65,7 @@ public class HomeFragment extends Fragment {
         root = inflater.inflate(R.layout.fragment_home, container, false);
 
 
+
         TextView allmenu = root.findViewById(R.id.allmenu);
         allmenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,8 +78,7 @@ public class HomeFragment extends Fragment {
         floatingbag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), InfoPesanan.class);
-                startActivity(intent);
+                ((BottomNavigationView)getActivity().findViewById(R.id.nav_view)).setSelectedItemId(R.id.navigation_order);
             }
         });
         initComponent();

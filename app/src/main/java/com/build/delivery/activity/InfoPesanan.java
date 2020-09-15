@@ -1,5 +1,6 @@
 package com.build.delivery.activity;
 
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
@@ -56,5 +57,14 @@ public class InfoPesanan extends AppCompatActivity {
         TextView tvPriceFeeBtm = findViewById(R.id.priceFeeBtm);
         tvPriceFee.setPaintFlags(tvPriceFee.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
         tvPriceFeeBtm.setPaintFlags(tvPriceFeeBtm.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
+
+        LinearLayout btnpesan = findViewById(R.id.btn_pesan);
+        btnpesan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(InfoPesanan.this, OrderDalamProses.class);
+                startActivity(intent);
+            }
+        });
     }
 }

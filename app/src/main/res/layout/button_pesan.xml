@@ -68,6 +68,7 @@
             </LinearLayout>
         </RelativeLayout>
         <LinearLayout
+            android:id="@+id/btn_pesan"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:orientation="horizontal"

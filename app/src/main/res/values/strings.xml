@@ -12,4 +12,8 @@
         <item name="colorControlActivated">@color/colorOrange</item> <!-- In focus -->
         <item name="colorControlNormal">@color/colorGray</item> <!-- not touched -->
     </style>
+
+    <string name="title_activity_keranjang_belanja">KeranjangBelanja</string>
+    <string name="tab_text_1">Dalam Proses</string>
+    <string name="tab_text_2">Pesanan Selesai</string>
 </resources>
