@@ -2,6 +2,7 @@ package com.build.delivery.adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.build.delivery.R;
 import com.build.delivery.activity.DetailMenu;
+import com.build.delivery.activity.Login;
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
@@ -23,6 +25,9 @@ public class RecyclerViewAdapterMenu extends RecyclerView.Adapter<RecyclerViewAd
     private ArrayList<String> mImages = new ArrayList<>();
     private ArrayList<String> mPrice = new ArrayList<>();
     private Context mContext;
+    SharedPreferences sharedpreferences;
+    public static final String mypreference = "mypref";
+    public static final String tokenJWT = "tokenKey";
 
     public RecyclerViewAdapterMenu(Context context,  ArrayList<String> imageNames, ArrayList<String> images ,ArrayList<String> price) {
         mImageNames = imageNames;
@@ -52,12 +57,15 @@ public class RecyclerViewAdapterMenu extends RecyclerView.Adapter<RecyclerViewAd
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(mContext, DetailMenu.class);
-                intent.putExtra("image_url", mImages.get(position));
-                intent.putExtra("image_name", mImageNames.get(position));
-                intent.putExtra("price", mPrice.get(position));
-                mContext.startActivity(intent);
+                if (sharedpreferences.contains(tokenJWT)) {
+                    Intent intent = new Intent(mContext, DetailMenu.class);
+                    intent.putExtra("image_url", mImages.get(position));
+                    intent.putExtra("image_name", mImageNames.get(position));
+                    intent.putExtra("price", mPrice.get(position));
+                    mContext.startActivity(intent);
+                }else{
+                    mContext.startActivity(new Intent(mContext, Login.class));
+                }
             }
         });
     }
