@@ -16,6 +16,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
@@ -30,6 +31,7 @@ import com.build.delivery.adapter.RecyclerViewAdapterMenuBeranda;
 import com.build.delivery.adapter.RecyclerViewAdapterMerchants;
 import com.build.delivery.model.Image;
 import com.build.delivery.utils.Tools;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,12 +65,20 @@ public class HomeFragment extends Fragment {
         root = inflater.inflate(R.layout.fragment_home, container, false);
 
 
+
         TextView allmenu = root.findViewById(R.id.allmenu);
         allmenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), DaftarMenu.class);
                 startActivity(intent);
+            }
+        });
+        ConstraintLayout floatingbag= root.findViewById(R.id.floatingbag);
+        floatingbag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((BottomNavigationView)getActivity().findViewById(R.id.nav_view)).setSelectedItemId(R.id.navigation_order);
             }
         });
         initComponent();
