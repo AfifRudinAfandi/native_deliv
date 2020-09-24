@@ -7,8 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingVertical="12dp"
-    android:orientation="vertical"
-    tools:context=".ui.main.PlaceholderFragment">
+    android:orientation="vertical">
 
     <include layout="@layout/layout_list_dalam_proses"
         android:layout_marginHorizontal="16dp"

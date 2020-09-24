@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.build.delivery.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.kelin.translucentbar.library.TranslucentBarManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupWithNavController(navView, navController);
+
+
+        TranslucentBarManager translucentBarManager = new TranslucentBarManager(this);
+        translucentBarManager.transparent(this);
 
     }
 

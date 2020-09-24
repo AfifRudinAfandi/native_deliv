@@ -19,87 +19,12 @@
         android:paddingHorizontal="@dimen/activity_horizontal_margin"
         android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/paket"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/name_order2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunitosans_bold"
-                    android:text="Ayam Kriwul Paket B"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:fontFamily="@font/nunitosans_bold"
-                    android:text="Rp. 15.000,-"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="14sp" />
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="20dp"
-                android:gravity="center_horizontal|center_vertical"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/minus2"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:background="@drawable/view_radius_4"
-                    android:backgroundTint="@color/colorGray_2"
-                    android:fontFamily="@font/nunitosans_bold"
-                    android:text="-"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/value_count2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="26dp"
-                    android:fontFamily="@font/nunitosans_extrabold"
-                    android:text="0"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/plus2"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:layout_width="23dp"
-                    android:layout_height="32dp"
-                    android:background="@drawable/view_radius_4"
-                    android:backgroundTint="@color/colorGray_2"
-                    android:fontFamily="@font/nunitosans_bold"
-                    android:text="+"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="18sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:orientation="horizontal"
             android:gravity="center"
             android:background="@drawable/view_radius_8"
-            android:backgroundTint="@color/colorRed_2">
+            android:backgroundTint="@color/colorRedButton">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
