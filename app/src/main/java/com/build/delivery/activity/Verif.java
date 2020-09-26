@@ -25,6 +25,8 @@ import com.build.delivery.R;
 import com.build.delivery.conn.RestClient;
 import com.build.delivery.pojoauth.AuthBody;
 import com.build.delivery.pojoauth.AuthResponse;
+import com.build.delivery.pojophone.PhoneBody;
+import com.build.delivery.pojophone.PhoneResponse;
 import com.poovam.pinedittextfield.PinField;
 import com.poovam.pinedittextfield.SquarePinField;
 
@@ -37,7 +39,7 @@ import retrofit2.Response;
 
 public class Verif extends AppCompatActivity {
     String strPhoneNumber,strOtpNumber;
-    TextView textPhoneNumber;
+    TextView textPhoneNumber,resendOtp;
     SharedPreferences sharedpreferences;
     private BroadcastReceiver broadcastReceiver = null;
     private TextView otp;
@@ -72,6 +74,7 @@ public class Verif extends AppCompatActivity {
         strOtpNumber=getIntent().getStringExtra("otpNumber");
         Toast.makeText(this, "OTP Anda: "+strOtpNumber, Toast.LENGTH_SHORT).show();
         textPhoneNumber=findViewById(R.id.textPhoneNumber);
+        resendOtp=findViewById(R.id.resendOtp);
         textPhoneNumber.setText(strPhoneNumber);
         sharedpreferences = getSharedPreferences(mypreference,
                 Context.MODE_PRIVATE);
@@ -82,6 +85,26 @@ public class Verif extends AppCompatActivity {
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         }
+
+        //resend OTP onclick is here.........
+        resendOtp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PhoneBody phoneBody=new PhoneBody();
+                phoneBody.setPhone("0"+strPhoneNumber);
+                RestClient.getService().resendOtp(phoneBody).enqueue(new Callback<PhoneResponse>() {
+                    @Override
+                    public void onResponse(Call<PhoneResponse> call, Response<PhoneResponse> response) {
+                        Toast.makeText(Verif.this, "OTP Anda: "+response.body().getData().getOtp(), Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onFailure(Call<PhoneResponse> call, Throwable t) {
+
+                    }
+                });
+            }
+        });
 
         FrameLayout btnBack = findViewById(R.id.btn_back_verif);
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -100,10 +123,14 @@ public class Verif extends AppCompatActivity {
                 RestClient.getService().postAuth(authBody).enqueue(new Callback<AuthResponse>() {
                     @Override
                     public void onResponse(Call<AuthResponse> call, Response<AuthResponse> response) {
-                        SharedPreferences.Editor editor = sharedpreferences.edit();
-                        editor.putString(tokenJWT, response.body().getData());
-                        editor.commit();
-                        startActivity(new Intent(Verif.this,MainActivity.class));
+                        if(response.body().getStatus()==200){
+                            SharedPreferences.Editor editor = sharedpreferences.edit();
+                            editor.putString(tokenJWT, response.body().getData());
+                            editor.commit();
+                            startActivity(new Intent(Verif.this,MainActivity.class));
+                        }else{
+                            Toast.makeText(Verif.this, ""+response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                        }
                     }
 
                     @Override
