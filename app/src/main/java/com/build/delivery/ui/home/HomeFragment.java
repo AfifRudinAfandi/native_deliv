@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,12 +30,20 @@ import com.build.delivery.R;
 import com.build.delivery.activity.DaftarMenu;
 import com.build.delivery.adapter.RecyclerViewAdapterMenuBeranda;
 import com.build.delivery.adapter.RecyclerViewAdapterMerchants;
+import com.build.delivery.conn.RestClient;
 import com.build.delivery.model.Image;
+import com.build.delivery.pojohome.HomeResponse;
+import com.build.delivery.pojohome.MenuBestItem;
+import com.build.delivery.pojohome.MenuTopItem;
 import com.build.delivery.utils.Tools;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
@@ -63,9 +72,7 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
         root = inflater.inflate(R.layout.fragment_home, container, false);
-
-
-
+      
         TextView allmenu = root.findViewById(R.id.allmenu);
         allmenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,61 +100,48 @@ public class HomeFragment extends Fragment {
 
 
     private void addOutlate(){
-        mImageUrlsOut.add("https://i.ibb.co/6tTxpgd/img5.jpg");
-        mNamesOut.add("Ayam Kriwul Sukorejo");
-        mRatingOut.add("4,8 (374)");
+        RestClient.getService().homeMenu().enqueue(new Callback<HomeResponse>() {
+            @Override
+            public void onResponse(Call<HomeResponse> call, Response<HomeResponse> response) {
+                Log.d("pesan",""+response.body().getData().getMenuTop());
+                List<MenuTopItem>menuTopItems=response.body().getData().getMenuTop();
+                for (MenuTopItem menuTopItem : menuTopItems){
+                    mImageUrlsOut.add(menuTopItem.getImage());
+                    mNamesOut.add(menuTopItem.getName());
+                    mRatingOut.add("4,8 (374)");
+                }
+            }
 
-        mImageUrlsOut.add("https://i.ibb.co/DM1s7F4/img6.jpg");
-        mNamesOut.add("Ayam Kriwul Sukorejo");
-        mRatingOut.add("4,8 (374)");
+            @Override
+            public void onFailure(Call<HomeResponse> call, Throwable t) {
+                Log.e("error",""+t.getMessage());
 
-        mImageUrlsOut.add("https://i.ibb.co/Zfs8kDw/img7.jpg");
-        mNamesOut.add("Ayam Kriwul Sukorejo");
-        mRatingOut.add("4,8 (374)");
-
-        mImageUrlsOut.add("https://i.ibb.co/L9KsNQ1/img8.jpg");
-        mNamesOut.add("Ayam Kriwul Sukorejo");
-        mRatingOut.add("4,8 (374)");
-
-        mImageUrlsOut.add("https://i.ibb.co/6tTxpgd/img5.jpg");
-        mNamesOut.add("Ayam Kriwul Sukorejo");
-        mRatingOut.add("4,8 (374)");
+            }
+        });
         outlateRecycle();
     }
 
 
     private void addMenu(){
-        mImageUrls.add("https://i.ibb.co/5FwxsW2/img.jpg");
-        mNames.add("Kriwul Sambel");
-        mPrice.add("Rp 16k");
 
-        mImageUrls.add("https://i.ibb.co/FzbXnFH/img2.jpg");
-        mNames.add("Kriwul Geprek");
-        mPrice.add("Rp 8k-10k");
+        RestClient.getService().homeMenu().enqueue(new Callback<HomeResponse>() {
+            @Override
+            public void onResponse(Call<HomeResponse> call, Response<HomeResponse> response) {
+                Log.d("pesan",""+response.body().getData().getMenuTop());
+                List<MenuBestItem>menuBestItems=response.body().getData().getMenuBest();
+                for (MenuBestItem menuBestItem : menuBestItems){
+                    mImageUrls.add(menuBestItem.getImage());
+                    mNames.add(menuBestItem.getName());
+                    mPrice.add(menuBestItem.getPrice());
+                }
+            }
 
-        mImageUrls.add("https://i.ibb.co/zSSM7cf/img3.jpg");
-        mNames.add("Es Lemon Tea");
-        mPrice.add("Rp 5k");
+            @Override
+            public void onFailure(Call<HomeResponse> call, Throwable t) {
+                Log.e("error",""+t.getMessage());
 
-        mImageUrls.add("https://i.ibb.co/j8vzGJR/img4.jpg");
-        mNames.add("Kriwul Original");
-        mPrice.add("Rp 14k");
-
-        mImageUrls.add("https://i.ibb.co/5FwxsW2/img.jpg");
-        mNames.add("Kriwul Sambel");
-        mPrice.add("Rp 16k");
-
-        mImageUrls.add("https://i.ibb.co/FzbXnFH/img2.jpg");
-        mNames.add("Kriwul Geprek");
-        mPrice.add("Rp 8k-10k");
-
-        mImageUrls.add("https://i.ibb.co/zSSM7cf/img3.jpg");
-        mNames.add("Es Lemon Tea");
-        mPrice.add("Rp 5k");
-
-        mImageUrls.add("https://i.ibb.co/j8vzGJR/img4.jpg");
-        mNames.add("Kriwul Original");
-        mPrice.add("Rp 14k");
+            }
+        });
 
         menuRecycle();
 

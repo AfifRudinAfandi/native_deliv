@@ -123,13 +123,15 @@
             android:layout_marginTop="86dp"
             android:layout_gravity="center_horizontal"
             android:text="Belum menerima kode?"/>
+
         <TextView
+            android:id="@+id/resendOtp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/nunitosans_bold"
-            android:textSize="16sp"
-            android:textColor="@color/colorBlack"
             android:layout_gravity="center_horizontal"
-            android:text="Kirim ulang"/>
+            android:fontFamily="@font/nunitosans_bold"
+            android:text="Kirim ulang"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
