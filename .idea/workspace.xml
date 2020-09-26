@@ -17,32 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4251181b-cdaf-464c-9b50-a7e72e0060f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/pojohome/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/pojohome/HomeResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/pojohome/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/pojohome/MenuBestItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/pojohome/MenuTopItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/pojomenudetail/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/pojomenudetail/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/pojomenudetail/MenuDetailResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gitignore.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/activity/Verif.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/activity/Verif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/conn/MainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/conn/MainInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/build/delivery/ui/home/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_verif.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verif.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +28,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_30" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="3d19680e" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -219,7 +195,25 @@
       <option name="presentableId" value="Default" />
       <updated>1597639730078</updated>
     </task>
+    <task id="LOCAL-00001" summary="revisi">
+      <created>1601133828247</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601133828247</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -281,9 +275,10 @@
     <state x="271" y="146" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597741825045" />
     <state x="271" y="155" key="AndroidCreateResourceFileDialog/0.23.1366.695@0.23.1366.695" timestamp="1597927618036" />
     <state x="271" y="157" key="AndroidCreateResourceFileDialog/0.23.1366.704@0.23.1366.704" timestamp="1598781816464" />
-    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1599104262861">
-      <screen x="0" y="23" width="1366" height="702" />
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1601133826218">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601133826218" />
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1366.702@0.23.1366.702" timestamp="1599104262861" />
     <state x="100" y="123" width="1166" height="495" key="DiffContextDialog" timestamp="1597814327425">
       <screen x="0" y="23" width="1366" height="695" />
@@ -357,9 +352,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="448" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1600520754732" />
-    <state x="283" y="109" key="Vcs.Push.Dialog.v2" timestamp="1599104141493">
-      <screen x="0" y="23" width="1366" height="702" />
+    <state x="283" y="89" key="Vcs.Push.Dialog.v2" timestamp="1601133842479">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="283" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601133842479" />
     <state x="283" y="109" key="Vcs.Push.Dialog.v2/0.23.1366.702@0.23.1366.702" timestamp="1599104141493" />
     <state x="167" y="77" width="1182" height="523" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1597822798709">
       <screen x="0" y="23" width="1366" height="695" />
