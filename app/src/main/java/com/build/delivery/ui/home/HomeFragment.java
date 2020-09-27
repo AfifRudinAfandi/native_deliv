@@ -127,7 +127,7 @@ public class HomeFragment extends Fragment {
         RestClient.getService().homeMenu().enqueue(new Callback<HomeResponse>() {
             @Override
             public void onResponse(Call<HomeResponse> call, Response<HomeResponse> response) {
-                Log.d("pesan",""+response.body().getData().getMenuTop());
+                Log.d("bottom",""+response.body().getData().getMenuTop());
                 List<MenuBestItem>menuBestItems=response.body().getData().getMenuBest();
                 for (MenuBestItem menuBestItem : menuBestItems){
                     mImageUrls.add(menuBestItem.getImage());
